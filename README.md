@@ -3,10 +3,10 @@ Proposal to add sh script or simillar solution to [Eww](https://github.com/elkow
 
 ## Explenation
 Closing Eww widgets is kinda.. problematic
-You can call pid to find what you are looking for.
+You can call it and kill it but it's too much looking. You can also to a static function to do it.
 
 
-But i think i have found the better solution by using bash to close chosen widgets in [Eww](https://github.com/elkowar/eww) (Elkoawr wacky widgets)
+But i think i have found a better solution by using bash to close chosen widgets in [Eww](https://github.com/elkowar/eww) (Elkoawr wacky widgets)
 
 
 Daemon in Eww with the `--config` fkag, is assigned to certain path that links actions to that folder. 
