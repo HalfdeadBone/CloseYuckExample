@@ -1,0 +1,27 @@
+(defvar CLOSE `./close.sh`)
+(deflisten ALLWIDGETS  `./allwidgets.sh`)
+(defwindow bg
+    :monitor 0
+    :geometry (geometry :x "0%"
+                        :y "0"
+                        :width "20%"
+                        :height "10%"
+                        :anchor "center center")
+    :stacking "fg"
+    (bg)
+)
+
+(defwindow dd
+    :monitor 0
+    :geometry (geometry :x "0%"
+                        :y "0"
+                        :width "20%"
+                        :height "10%"
+                        :anchor "top center")
+    :stacking "fg"
+    (bg)
+)
+
+(defwidget bg[]
+    (button :onclick "`${CLOSE} ${ALLWIDGETS}`" )
+)
